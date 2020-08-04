@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NASA Photo of the Day</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="post_error">An error occurred while loading the repositories</string>
+    <string name="home">Home</string>
+    <string name="full">Fullscreen</string>
+
+</resources>

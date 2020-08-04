@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativeLL"
+    tools:context=".view.HomeActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/image_IV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_20sp"
+        android:layout_gravity="top"
+        android:background="@color/color_text_white">
+
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/title_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:text="@string/title"
+            android:textColor="@color/color_text_black"
+            android:layout_marginRight="@dimen/dimen_10sp"
+            android:padding="@dimen/dimen_10sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/calendar_TV"
+            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10sp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <TextView
+            android:padding="@dimen/dimen_10sp"
+            android:background="@drawable/border"
+            android:id="@+id/description_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:text="@string/description"
+            android:textColor="@color/color_text_black"
+            android:layout_marginRight="@dimen/dimen_10sp"/>
+
+        <ImageView
+            android:id="@+id/action_IV"
+            android:src="@drawable/ic_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_text_black"
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
